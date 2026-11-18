@@ -14,7 +14,7 @@ public class Arma {
     private Long id;
     private String nome;
     private String fabricante;
-    private String url;
+    private String imagem ;
     private String descricao;
     @Enumerated(EnumType.STRING)
     CategoriaArma categoria;
@@ -43,12 +43,12 @@ public class Arma {
         this.fabricante = fabricante;
     }
 
-    public String getUrl() {
-        return url;
+    public String getImagem() {
+        return imagem;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImagem(String url) {
+        this.imagem = url;
     }
 
     public String getDescricao() {
@@ -67,19 +67,19 @@ public class Arma {
         this.categoria = categoria;
     }
 
-    public Arma(Long id, String nome, String fabricante, String url, String descricao, CategoriaArma categoria) {
+    public Arma(Long id, String nome, String fabricante, String imagem, String descricao, CategoriaArma categoria) {
         this.id = id;
         this.nome = nome;
         this.fabricante = fabricante;
-        this.url = url;
+        this.imagem = imagem;
         this.descricao = descricao;
         this.categoria = categoria;
     }
     public Arma(){}
-    public Arma( String nome, String fabricante, String url, String descricao, CategoriaArma categoria) {
+    public Arma( String nome, String fabricante, String imagem, String descricao, CategoriaArma categoria) {
         this.nome = nome;
         this.fabricante = fabricante;
-        this.url = url;
+        this.imagem = imagem;
         this.descricao = descricao;
         this.categoria = categoria;
     }

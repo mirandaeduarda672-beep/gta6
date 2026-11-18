@@ -31,7 +31,7 @@ public class ArmaService {
         armaAtualizado.setCategoria(arma.getCategoria());
         armaAtualizado.setFabricante(arma.getFabricante());
         armaAtualizado.setNome(arma.getNome());
-        armaAtualizado.setUrl(arma.getUrl());
+        armaAtualizado.setImagem(arma.getImagem());
 
     }
 }
