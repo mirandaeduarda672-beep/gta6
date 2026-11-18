@@ -20,4 +20,14 @@
         public List<Personagem> listarProfessores(){
             return personagemService.acharPersonagem();
         }
+
+        @DeleteMapping("/{id}")
+        public void deletarPersonagem(@PathVariable long id){
+            personagemService.deletarPersonagem(id);
+        }
+
+        @PutMapping("/{id}")
+        public void atualizarPersonagem(@PathVariable long id, @RequestBody Personagem personagem){
+            personagemService.alterar(id, personagem);
+        }
     }
